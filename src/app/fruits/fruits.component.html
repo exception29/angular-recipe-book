@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-fruit-list
+        (fruitWasSelected)="selectedFruit = $event"></app-fruit-list>
+    </div>
+    <div class="col-md-7">
+        <app-fruit
+        *ngIf ="selectedFruit; else infoText"
+        [fruit]= "selectedFruit">
+    </app-fruit>
+    <ng-template #infoText>
+        Please select a Fruit!;
+    </ng-template>
+    </div>
+</div>

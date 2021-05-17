@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <div
+        class="list-group-item clearfix"
+        *ngFor= "let p of persons" 
+       
+    > <!-- event binding-->
+   <div class="pull-left">
+       <h4 class="list-group-item-heading">{{p.name}}   age-({{p.age}})</h4>
+    </div>
+    <div>
+     <span> <p class="list-group-item">{{p.dob}} ,  age-({{p.age}})</p>
+     
+       <p class="list-group-item">Address - {{p.address.flat}}, {{p.address.building}}, {{p.address.street}}, {{p.address.city}} </p>
+       <!-- <p class="list-group-item">{{p.address.building}}</p>
+       <p class="list-group-item">{{p.address.street}}</p>
+       <p class="list-group-item">{{p.address.city}}</p>  -->
+    </span>
+    <hr>
+    </div>
+
+    
+       <!-- <p class= "list-group-item-text">{{recipe.description}}</p>-->
+ 
+   <!-- src="{{recipe.imagePath}}"  can also be used-->
+  
+</div>
+       
+       
+    </div>
+   
+</div>
+
+

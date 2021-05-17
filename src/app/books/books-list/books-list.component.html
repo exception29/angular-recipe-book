@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div class="col-xs-12">
+       
+        
+        <app-books-item *ngFor= "let bookElement of books" 
+        [book]= 'bookElement'
+        ></app-books-item> <!-- (click)= "onBookSelected(bookElement)"-->
+
+         
+    </div>
+</div>

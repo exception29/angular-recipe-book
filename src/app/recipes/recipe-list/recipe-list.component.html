@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success" (click)="onNewRecipe()" > New Recipe </button> 
+    </div>
+ 
+</div>
+<br>
+
+    <div  class="row">
+        <div class="col-xs-12">
+           
+            <!-- recipes array from Recipe model -->
+            <app-recipe-item 
+            *ngFor= "let recipeElemet of recipes;let i=index "
+            [recipe]= 'recipeElemet' 
+            [index]="i"   
+            ></app-recipe-item>  <!--(click)= "onRecipeSelected(recipeElemet)" as we are using services -->
+    
+             <!-- [recipe] property is   from recipe-item.component.ts  we are sending this item from list to recipe-item-->
+        </div>
+
+
+</div>

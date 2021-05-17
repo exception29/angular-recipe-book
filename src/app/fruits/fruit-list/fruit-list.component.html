@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div class="col-xs-12">
+       
+        <!-- fruits array from Fruit model -->
+        <app-fruit-item *ngFor= "let fruitElement of fruits" 
+        [fruit]= 'fruitElement'
+        (click)= "onFruitSelected(fruitElement)"></app-fruit-item>
+
+        
+    </div>
+</div>

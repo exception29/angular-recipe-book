@@ -1,0 +1,16 @@
+<a 
+    href = "#" 
+    class = "list-group-item clearfix"
+    (click)= "onSelected()"> <!-- event binding-->
+   <div class="pull-left">
+       <h4 class="list-group-item-heading">{{fruit.name}}</h4>
+      
+   </div>
+   <!-- src="{{recipe.imagePath}}"  can also be used-->
+   <span class="pull-right"><img 
+      
+       [src]= "fruit.imagePath"
+        alt ="{{fruit.name}}"
+        class = "img-responsive" style="max-height: 50px;">
+    </span>
+</a>
